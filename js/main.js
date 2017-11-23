@@ -11,11 +11,17 @@
       //load carData
       let objectIndex = carData[this.id];
       console.log(objectIndex.model);
+      document.querySelectorAll(".modelName");
+      let price = document.querySelectorAll(".priceInfo");
+      let description = document.querySelectorAll('.modelDetails');
+      let model = document.querySelectorAll(".modelName");
+
+      model[0].innerHTML = objectIndex.model;
+      price[0].innerHTML = objectIndex.price;
+      description[0].innerHTML = objectIndex.description;
 
 
-       model.innerHTML = modelName.innerHTML;
-       description.innerHTML = modelDetails.description[currentIndex];
-       description.innerHTML = modelDetails.description[currentIndex];
+
 
               }
               carButtons.forEach(function(element,index){
